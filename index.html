@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Serpiente · Christian García</title>
+<meta name="description" content="El clásico juego de la serpiente hecho con JavaScript y canvas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="game">
+  <header>
+    <h1>Serpiente</h1>
+    <div class="hud">
+      <div><small>Puntos</small><b id="score">0</b></div>
+      <div><small>Récord</small><b id="best">0</b></div>
+    </div>
+  </header>
+
+  <div class="frame">
+    <canvas id="board" role="img" aria-label="Tablero del juego"></canvas>
+    <div id="overlay" class="overlay" aria-live="polite">
+      <h2 id="title">¿Listo?</h2>
+      <p id="msg">Come, crece y no choques.</p>
+      <button id="play" type="button">Jugar</button>
+    </div>
+  </div>
+
+  <p class="help">Flechas o WASD para moverte · Espacio para pausar · En el móvil, desliza el dedo</p>
+</main>
+<script src="js/game.js"></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
